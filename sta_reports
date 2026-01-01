@@ -1,0 +1,67 @@
+🔹 pre_cts_setup.rpt
+
+Setup timing analysis before Clock Tree Synthesis
+
+Used to identify logic-dominated critical paths
+
+Helps guide CTS and optimization strategy
+
+🔹 pre_cts_hold.rpt
+
+Hold analysis before CTS
+
+Establishes baseline short-path behavior
+
+Useful for comparing post-CTS hold degradation
+
+🔹 post_cts_setup.rpt
+
+Setup timing after CTS insertion
+
+Shows impact of clock latency and skew
+
+Used to evaluate CTS quality and skew balance
+
+🔹 post_cts_hold.rpt
+
+Hold timing after CTS
+
+Commonly reveals new hold violations
+
+Guides buffer insertion and delay balancing
+
+🔹 post_route_setup.rpt
+
+Final setup timing after placement & routing
+
+Includes real interconnect RC delays
+
+Used for sign-off-level setup closure
+
+🔹 post_route_hold.rpt
+
+Final hold timing after routing
+
+Confirms robustness across short paths
+
+Required for tape-out readiness
+
+🔹 mcmm_summary.rpt (optional but very strong)
+
+Multi-Corner Multi-Mode timing summary
+
+Covers different PVT corners (SS, TT, FF)
+
+Demonstrates awareness of process variation
+
+🔹 timing_summary.rpt
+
+High-level overview:
+
+Worst Negative Slack (WNS)
+
+Total Negative Slack (TNS)
+
+Number of violating paths
+
+Used to track iteration-by-iteration improvement
